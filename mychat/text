@@ -1,0 +1,103 @@
+/**************PASS PROPS USING TYPESCRIPT****************/
+
+file A:
+import React from 'react'
+import {FileB} from './fileB
+export const FileA: React.FC<Props> = (props) => {
+
+  return (
+<FileB random:"salut"/>
+  );
+};
+                        --------------
+file B:
+import React from 'react'
+
+//You must details what are u excepting to receive!!
+type Props = {
+ random: string;
+};
+//Then you place it as children
+
+export const FileB: React.FC<Props> = (props) => {
+
+const {random} = props;
+
+  return (
+<h1> {random}</h1>
+  );
+};
+
+/*********************PASS STATE TYPESCRIPT *************/
+
+// 1 We give the type of state
+interface IState {
+  room: string;
+  isRoomPicked: boolean;
+}
+interface IProps {}
+
+//2 we communicate it to the class
+class Home extends Component<IProps, IState> {
+  private inputRef: React.RefObject<HTMLSelectElement>;
+  constructor(props: any) {
+    super(props);
+    this.state = {
+      room: '',
+      isRoomPicked: false,
+    };
+
+
+
+/*********************PASS REFF USING TYPESCRIPT *************/
+/**For Function **/
+ // 1 We need first to import createRef
+import React, { useRef } from 'react';
+
+export const FileA: React.FC<Props> = (props) => {
+// 2 Create the ref
+  //We init to null as the component is not rendered yet.
+  const output = React.useRef<HTMLDivElement>(null);
+
+handleClick() => {
+    console.log(output.current.innerHTML or .value if input etc)
+}
+
+  return (
+      // 3Insert the ref
+ <div onClick={handleClick}   id='output' ref={output}></div>
+  );
+};
+                        --------------
+/*For Class*/
+class Home extends Component<IProps, IState> {
+  private inputRef: React.RefObject<HTMLSelectElement>;
+  constructor(props: any) {
+    super(props);
+    this.state = {
+      room: 'Sport',
+      isRoomPicked: false,
+    };
+    this.inputRef = React.createRef();
+
+  handleClick = () => {
+    let value = this.inputRef.current?.value;
+  }
+
+    render () {
+                    <input onClick={this.handleClick} ref={this.inputRef}> Join</input>
+    }
+
+
+    /* Life cycle hooks */
+
+      //Life cycle: [] = did amount(only one time)
+  useEffect(() => {
+    console.log('mounted');
+  }, []);
+  //Run each time the component is render (after receiving an update);
+  useEffect(() => {
+    console.log('render each time there is an update');
+  });
+  //Use state hooks. First argument the state, the second is the method to be called to change state
+  const [state, setState] = useState({ room: props.roomName });

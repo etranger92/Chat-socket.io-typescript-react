@@ -1,0 +1,20 @@
+@import "../../style/shared.css";
+
+#home {
+    margin: 2rem;
+}
+
+#container-select-room {
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+#container-select-room button {
+    width: 50%;
+    align-self: center;
+    margin-top: 2rem;
+
+}

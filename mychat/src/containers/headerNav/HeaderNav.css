@@ -1,0 +1,14 @@
+@import '../../style/shared.css';
+
+.nav_container {
+  height: 20vh;
+  background-color: grey;
+}
+.nav_bar {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  align-items: center;
+  height: 100%;
+  text-transform: uppercase;
+}

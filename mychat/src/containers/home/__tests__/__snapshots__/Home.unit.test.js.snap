@@ -1,0 +1,112 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`We test the innerHTML of the component renders Home 1`] = `
+<Fragment>
+  <div
+    id="home"
+  >
+    <h1>
+       Hello home
+    </h1>
+    <div
+      id="container-select-room"
+    >
+      <select
+        id="rooms"
+        name="rooms"
+      >
+        <option
+          value="Sport"
+        >
+          Sport
+        </option>
+        <option
+          value="Science"
+        >
+          Science
+        </option>
+      </select>
+      <button
+        onClick={[Function]}
+      >
+         Join
+      </button>
+    </div>
+  </div>
+   
+</Fragment>
+`;
+
+exports[`renders HeaderNav 1`] = `
+<Fragment>
+  <div
+    id="home"
+  >
+    <h1>
+       Hello home
+    </h1>
+    <div
+      id="container-select-room"
+    >
+      <select
+        id="rooms"
+        name="rooms"
+      >
+        <option
+          value="Sport"
+        >
+          Sport
+        </option>
+        <option
+          value="Science"
+        >
+          Science
+        </option>
+      </select>
+      <button
+        onClick={[Function]}
+      >
+         Join
+      </button>
+    </div>
+  </div>
+   
+</Fragment>
+`;
+
+exports[`renders Home 1`] = `
+<Fragment>
+  <div
+    id="home"
+  >
+    <h1>
+       Hello home
+    </h1>
+    <div
+      id="container-select-room"
+    >
+      <select
+        id="rooms"
+        name="rooms"
+      >
+        <option
+          value="Sport"
+        >
+          Sport
+        </option>
+        <option
+          value="Science"
+        >
+          Science
+        </option>
+      </select>
+      <button
+        onClick={[Function]}
+      >
+         Join
+      </button>
+    </div>
+  </div>
+   
+</Fragment>
+`;
